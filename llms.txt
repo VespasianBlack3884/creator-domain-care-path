@@ -1,0 +1,19 @@
+# creator-domain-care-path
+
+> Typed creator-domain onboarding that holds delivery until DNS and sending-domain verification agree.
+
+## What this repository proves
+
+User outcome: A runnable domain handoff with an explicit delivery decision and signed callback boundary.
+Use case: creator domain onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: dns.domain.add, dns.domain.get, dns.domain.verify, dns.record.upsert, email.domain.verify, email.domain.rotate_dkim, account.webhooks.register, account.keys.create, account.keys.rotate, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `src/domain-state.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

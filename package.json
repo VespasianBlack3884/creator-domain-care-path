@@ -1,0 +1,20 @@
+{
+  "name": "creator-domain-care-path",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "onboard": "tsx src/onboard-creator-domain.ts",
+    "key-drill": "tsx src/onboard-creator-domain.ts --key-drill",
+    "test": "tsx --test src/domain-state.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
